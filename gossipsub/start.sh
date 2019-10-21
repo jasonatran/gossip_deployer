@@ -29,8 +29,8 @@ deploy_host() {
 }
 
 peer() {
-  echo "peering to: " ${IP[$COUNT[0]]} ${MADDR[$COUNT[0]]}
-  retry_run go run ./cmd/client/main.go open-peers /ip4/${IP[$COUNT[0]]}/tcp/3000/ipfs/${MADDR[$COUNT[0]]}
+  echo "peering to: " ${IP[$COUNT]} ${MADDR[$COUNT]}
+  retry_run go run ./cmd/client/main.go open-peers /ip4/${IP[$COUNT]}/tcp/3000/ipfs/${MADDR[$COUNT]}
 }
 
 start() {
