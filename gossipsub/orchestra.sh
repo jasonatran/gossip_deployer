@@ -26,7 +26,7 @@ check() {
 }
 
 send() {
-  go run ./cmd/orchestra/main.go start
+  go run ./cmd/orchestra/main.go start --log /output.log
 }
 
 check
