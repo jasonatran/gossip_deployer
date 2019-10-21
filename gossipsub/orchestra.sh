@@ -14,9 +14,9 @@ retry_run() {
 }
 
 IFS=$'\r\n' GLOBIGNORE='*' command eval  'IP=($(cat ./IP.txt))' 
-# echo ${IP[@]:0:EXP}
+echo ${IP[@]:0:EXP}
 IFS=$'\r\n' GLOBIGNORE='*' command eval  'COUNT=($(cat ./NODECOUNT.txt))' 
-# echo ${COUNT[@]}
+echo ${COUNT[@]}
 
 check() {
   for i in $(seq 0 $COUNT)
