@@ -30,3 +30,4 @@ send() {
 }
 
 check
+send
