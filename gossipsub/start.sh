@@ -16,11 +16,11 @@ retry_run() {
 }
 
 IFS=$'\r\n' GLOBIGNORE='*' command eval  'COUNT=($(cat ./NODECOUNT.txt))' 
-# echo ${COUNT[@]}
-IFS=$'\r\n' GLOBIGNORE='*' command eval  'IP=($(cat ./IP.txt))' 
-# echo ${IP[@]:0:EXP}
-IFS=$'\r\n' GLOBIGNORE='*' command eval  'MADDR=($(cat ./MADDR.txt))' 
-# echo ${MADDR[@]:0:EXP}
+# echo ${COUNT[0]}
+command eval  'IP=($(cat ./IP.txt))' 
+# echo ${IP[@]:0:COUNT}
+command eval  'MADDR=($(cat ./MADDR.txt))' 
+# echo ${MADDR[@]:0:COUNT}
 
 deploy_host() {
   echo "deploying host"
