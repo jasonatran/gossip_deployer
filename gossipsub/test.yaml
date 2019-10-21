@@ -1,0 +1,986 @@
+---
+nodes:
+# node 1
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-1.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 2
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-2.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 3
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-3.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 4
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-4.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 5
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-5.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 6
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-6.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 7
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-7.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 8
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-8.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 9
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-9.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 10
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-10.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 11
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-11.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 12
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-12.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 13
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-13.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 14
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-14.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 15
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-15.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 16
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-16.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 17
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-17.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 18
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-18.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 19
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-19.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 20
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-20.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 21
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-21.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 22
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-22.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 23
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-23.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 24
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-24.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 25
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-25.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 26
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-26.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 27
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-27.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 28
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-28.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 29
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-29.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 30
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-30.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 31
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-31.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 32
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-32.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 33
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-33.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 34
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-34.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 35
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-35.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 36
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-36.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 37
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-37.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 38
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-38.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 39
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-39.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 40
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-40.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 41
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-41.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 42
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-42.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 43
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-43.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 44
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-44.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 45
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-45.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 46
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-46.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 47
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-47.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 48
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-48.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 49
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-49.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 50
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-50.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 51
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-51.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 52
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-52.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 53
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-53.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: MADDR.txt
+        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+
+# orchestra node
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: orchestra.sh
+        target: /go-libp2p-pubsub-benchmark-tools/orchestra.sh
+    launch-script: "./orchestra.sh 53"
+
+
+
+
+
+
+
+
+
+
+
+
+

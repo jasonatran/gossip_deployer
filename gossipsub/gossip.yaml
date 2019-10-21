@@ -1,0 +1,665 @@
+---
+nodes:
+# node 0
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-1.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh"
+# node 1
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-2.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.0.2 QmZDJMYNQuuBB9fCyq31CFgx8uYZKyDXEawJP8gNUZLWkb"
+# node 2
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-3.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.0.18 QmbGWnSTk9xpKZ6fjEkZjLaMVfWW369RcE8e1r8oyo5Crr"
+# node 3
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-4.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.0.34 QmPbARE9YmKWkEMmrXuQ1ExjE2G9BrDEhmkX4rA38R7xDz"
+# node 4
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-5.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.0.50 QmVU2EvtvHuo8JmcXayQkDr8UhPec1dWSirsWHodEdDnc9"
+# node 5
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-6.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.0.66 QmV89AU415AGS6ims6Je75A8p7iCb8qRkXB52djZ6FFY32"
+# node 7
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-7.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.0.82 QmSX2cRHhRrTMWhFgu5HTNsAWTjc8yEgAu9xUwgxzk8rnG"
+# node 8
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-8.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.0.98 QmVjixascYYkaUWNu1JV461zZDQ4Dkai9KXBQjc3Uk58YP"
+# node 9
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-9.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.0.114 QmVzpiAb4WAB9GmQmxEZfm4GVm536RzmRX6BTCA4DAYabf"
+# node 10
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-10.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.0.130 QmZE7MabTWgt5DtZhyh1fykJoxnrryehYCoqVYk4P4UoXH"
+# node 11
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-11.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.0.146 QmdQfSYmDHDGyKmaNhcijaimU67QDPeZ4aBu6SVh1hDv5i"
+# node 12
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-12.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.0.162 QmcxMFGhWkQzn1v6qKx9GnMjtiPs93WLSbeAZ9tPQFiVxQ"
+# node 13
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-13.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.0.178 QmNU7s1XTMc78J9zLxSwMxX9GKY2vjtMi35tvFJNWxWJXu"
+# node 14
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-14.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.0.194 QmZ1Dutmy3akkNPjnkUwstSUV8LLiFUMfmZ7C7sXWaMkBp"
+# node 15
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-15.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.0.210 QmeJ793MdG67kVakcRi5u5iWwcRDxdWDMHeC9q91tgLRoW"
+# node 16
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-16.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.0.226 QmWXpgyvfvNAK5DXAejewSf6eDbf1MGvur5UwGHCnnx7u8"
+# node 17
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-17.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.0.242 QmP5RQCFAnM5tw9uwZDTUP3Li6qoEcAGW1Gb8ka27H6ZuK"
+# node 18
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-18.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.1.2 QmbCcMsUB7GEdwU81cZuVEtvbvQiGpHag8TiaiViAN62p6"
+# node 19
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-19.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.1.18 QmVn31nnFzeyURxo4qXjg7iqoJLqAvzrPMPcmofor1X1Go"
+# node 20
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-20.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.1.34 QmVw84Sc6oQsP5YExMFL6kpEEd3pt5DEzgPowZkvjGuzjX"
+# node 21
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-21.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.1.50 QmVNHhoq7iK5WLUXyXxjyw8ViLm3Y6i73v8RCLpY3eLFJR"
+# node 22
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-22.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.1.66 QmY9rQuWf4wExZWeBggjDvHv5QLFnSnyGBL8R5htMZaJE7"
+# node 23
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-23.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.1.82 QmT3crTDN2ioedKo3pcVJJsroVMvMCYrdeFwpqfTNDxVkD"
+# node 24
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-24.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.1.98 QmUSuHj9xq77Z1DLEHKxWEFpQQL9eSbBfyE65HvEga2BtB"
+# node 25
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-25.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.1.114 QmVa5XW8BhjaH3F2hBdFkZxDuimJTMN1UKnmqU9RWNNVFA"
+# node 26
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-26.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.1.130 QmVyP2LRnCMWSWRURXKnAhSZKMYhdEPpZ82hrx6d4Mbgjc"
+# node 27
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-27.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.1.146 QmY3m5Fmwzo4T6ELoV2k9Zi82bsVNJN5mWv4nVcoFXS2D8"
+# node 28
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-28.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.1.162 QmXasXVUXtCkZnUQqcnzQJtp65hHcxsbYPTzYv3phoh7x9"
+# node 29
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-29.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.1.178 QmQsCsvEZ4TriZvLcEKHaERcBY7Trkj75SSnpZfpZCCR6a"
+# node 30
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-30.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.1.194 QmYX9Y5XXAZCExydymsfBFYGha8Lk3e2q2pWLN3UuBgN39"
+# node 31
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-31.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.1.210 QmPnAGE3MSyyGU4GSGJdNhExBjVW3yGf6JLb79u4CGo71j"
+# node 32
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-32.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.1.226 QmZsERSSnRpMvPhyvihQ9WiibZmCJJTJk7qxG3tYUXjEs1"
+# node 33
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-33.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.1.242 QmZejhXnvb7uu6QhroPqm6Ddp1CWL9N6W3Y1tU7NV1TPLU"    
+# node 34
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-34.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.2.2 QmdmYHxXZoLY9CvPf1zP3aRZkgeSM8oRs6jSts3Lbihn6t"
+# node 35
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-35.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.2.18 QmTzTAMdARRMsmQSLZZ3SNuY9fD7BiCqaP1hpzuRLQUfRq"
+# node 36
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-36.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.2.34 QmVk22yhY1zvfyPAFFKvJvzHTijXpDR4PGeDu7icy61LsE"
+# node 37
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-37.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.2.50 QmZgPTTGcN5cHgFjeVvvkj8Dxw5Tqscu3LkXSLcrU8kUWP"
+# node 38
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-38.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.2.66 QmWeGoK4FiWttxjKByR6B4s58oMQUbp1hNS6Nm9dVF3sht"
+# node 39
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-39.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.2.82 QmW1wpFojdAgZJRtoTq536t2kQZz1fo4nS3targdxddn3M"
+# node 40
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-40.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.2.98 QmYQLBPMBtgwCfSeHTAC3G6fFAZhHh5DJ1qDTiq7x5aWYw"
+# node 41
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-41.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.2.114 QmfRexK94Cg6g97A1quVKKNsFqrQmT5jtVvCGDx6kVszgg"
+# node 42
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-42.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.2.130 QmUrhWAWZcdiKVBnKzyidZdEXW61z2ZzqQNkdssnv4TdwJ"
+# node 43
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-43.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.2.146 QmUTdELydrF77ya1Ba1HeSwKKutqD34UFSGbUgASD2TfSg"
+# node 44
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-44.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.2.162 QmYuZ4gaLWstCq8sHcVrppXv3KW2wQdcAepwgtZ9Xhwm31"
+# node 45
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-45.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.2.178 QmUMHUcQjJHcuq5Mc9VBZ4VEnuQbR3U2Zdf8GZGEpmJqF5"
+# node 46
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-46.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.2.194 QmSXnVLNDhnuFWXNj14GUYavdaXVRSCekpJx35PHYpxNHr"
+# node 47
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-47.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.2.210 QmeoyzQaECpvho9mctti6iPyseWJj9wFczX2zL8EqZThiy"
+# node 48
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-48.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.2.226 QmWM6P4G91fbDrTLktqNVqzCCWvqTp8HejiztvPDApsFi7"
+# node 49
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-49.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.2.242 QmZP78BoxpDbx5pkdkmENY3SNYH4dRiAWd2Li4LkouDE8L"
+# node 50
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-50.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.3.2 QmRfbW6cRbWfsAJrZay4sEBuZzLrzAFRKKTkUsyev5tYq6"
+# node 51
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-51.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.3.18 Qme3GoSxfCJMuEpQCp5VrFzPaip65LzEd59ir8brx4YQJ2"
+# node 52
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-52.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.3.34 QmZoikEoGq2Mp5N8S7qtRx6eKXFU2HgdVigEi6sZ6ZyJKn"
+# node 53
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: pems/pk-53.pem
+        target: /go-libp2p-pubsub-benchmark-tools/pk.pem
+      -
+        source: start.sh
+        target: /go-libp2p-pubsub-benchmark-tools/start.sh
+    launch-script: "./start.sh 10.1.3.50 QmQq5ayiDLREvAVQQ1eTrvaukg7A1zJJtcJgWwjKN63Fxv"
+
+# orchestra node
+  -
+    args: {}
+    image: "gcr.io/whiteblock/libp2p_gossipsub"
+    files:
+      -
+        source: IP.txt
+        target: /go-libp2p-pubsub-benchmark-tools/IP.txt
+      -
+        source: orchestra.sh
+        target: /go-libp2p-pubsub-benchmark-tools/orchestra.sh
+    launch-script: "./orchestra.sh 53"
+
+
+
+
+
+
+
+
+
+
+
+
+
