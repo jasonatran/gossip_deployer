@@ -690,4 +690,4 @@ nodes:
       -
         source: orchestra.sh
         target: /go-libp2p-pubsub-benchmark-tools/orchestra.sh
-    launch-script: "./orchestra.sh"
+    # launch-script: "./orchestra.sh"
