@@ -20,7 +20,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 1"
+    launch-script: "./start.sh"
 # node 1
   -
     args: {}
@@ -41,7 +41,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 2"
+    launch-script: "./start.sh 0"
 # node 2
   -
     args: {}
@@ -62,7 +62,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 3"
+    launch-script: "./start.sh 1"
 # node 3
   -
     args: {}
@@ -83,7 +83,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 4"
+    launch-script: "./start.sh 2"
 # node 4
   -
     args: {}
@@ -104,7 +104,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 5"
+    launch-script: "./start.sh 3"
 # node 5
   -
     args: {}
@@ -125,7 +125,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 6"
+    launch-script: "./start.sh 4"
 # node 6
   -
     args: {}
@@ -146,7 +146,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 7"
+    launch-script: "./start.sh 5"
 # node 7
   -
     args: {}
@@ -167,7 +167,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 8"
+    launch-script: "./start.sh 6"
 # node 8
   -
     args: {}
@@ -188,7 +188,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 9"
+    launch-script: "./start.sh 7"
 # node 9
   -
     args: {}
@@ -209,7 +209,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 10"
+    launch-script: "./start.sh 8"
 # node 10
   -
     args: {}
@@ -230,7 +230,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 11"
+    launch-script: "./start.sh 9"
 # node 11
   -
     args: {}
@@ -254,7 +254,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 12"
+    launch-script: "./start.sh 10"
 # node 12
   -
     args: {}
@@ -275,7 +275,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 13"
+    launch-script: "./start.sh 11"
 # node 13
   -
     args: {}
@@ -296,7 +296,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 14"
+    launch-script: "./start.sh 12"
 # node 14
   -
     args: {}
@@ -317,7 +317,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 15"
+    launch-script: "./start.sh 13"
 # node 15
   -
     args: {}
@@ -338,7 +338,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 16"
+    launch-script: "./start.sh 14"
 # node 16
   -
     args: {}
@@ -359,7 +359,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 17"
+    launch-script: "./start.sh 15"
 # node 17
   -
     args: {}
@@ -380,7 +380,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 18"
+    launch-script: "./start.sh 16"
 # node 18
   -
     args: {}
@@ -401,7 +401,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 19"
+    launch-script: "./start.sh 17"
 # node 19
   -
     args: {}
@@ -422,7 +422,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 20"
+    launch-script: "./start.sh 18"
 # node 20
   -
     args: {}
@@ -443,7 +443,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 21"
+    launch-script: "./start.sh 19"
 # node 21
   -
     args: {}
@@ -464,7 +464,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 22"
+    launch-script: "./start.sh 20"
 # node 22
   -
     args: {}
@@ -485,7 +485,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 23"
+    launch-script: "./start.sh 21"
 # node 23
   -
     args: {}
@@ -506,7 +506,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 24"
+    launch-script: "./start.sh 22"
 # node 24
   -
     args: {}
@@ -527,7 +527,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 25"
+    launch-script: "./start.sh 23"
 # node 25
   -
     args: {}
@@ -548,7 +548,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 26"
+    launch-script: "./start.sh 24"
 # node 26
   -
     args: {}
@@ -569,7 +569,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 27"
+    launch-script: "./start.sh 25"
 # node 27
   -
     args: {}
@@ -590,7 +590,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 28"
+    launch-script: "./start.sh 26"
 # node 28
   -
     args: {}
@@ -611,7 +611,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 29"
+    launch-script: "./start.sh 27"
 # node 29
   -
     args: {}
@@ -632,7 +632,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 30"
+    launch-script: "./start.sh 28"
 # node 30
   -
     args: {}
@@ -653,7 +653,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 31"
+    launch-script: "./start.sh 29"
 # node 31
   -
     args: {}
@@ -674,7 +674,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 32"
+    launch-script: "./start.sh 30"
 # node 32
   -
     args: {}
@@ -695,7 +695,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 33"
+    launch-script: "./start.sh 31"
 # node 33
   -
     args: {}
@@ -716,7 +716,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 34"
+    launch-script: "./start.sh 32"
 # node 34
   -
     args: {}
@@ -737,7 +737,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 35"
+    launch-script: "./start.sh 33"
 # node 35
   -
     args: {}
@@ -758,7 +758,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 36"
+    launch-script: "./start.sh 34"
 # node 36
   -
     args: {}
@@ -779,7 +779,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 37"
+    launch-script: "./start.sh 35"
 # node 37
   -
     args: {}
@@ -800,7 +800,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 38"
+    launch-script: "./start.sh 36"
 # node 38
   -
     args: {}
@@ -821,7 +821,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 39"
+    launch-script: "./start.sh 37"
 # node 39
   -
     args: {}
@@ -842,7 +842,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 40"
+    launch-script: "./start.sh 38"
 # node 40
   -
     args: {}
@@ -863,7 +863,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 41"
+    launch-script: "./start.sh 39"
 # node 41
   -
     args: {}
@@ -884,7 +884,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 42"
+    launch-script: "./start.sh 40"
 # node 42
   -
     args: {}
@@ -905,7 +905,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 43"
+    launch-script: "./start.sh 41"
 # node 43
   -
     args: {}
@@ -926,7 +926,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 44"
+    launch-script: "./start.sh 42"
 # node 44
   -
     args: {}
@@ -947,7 +947,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 45"
+    launch-script: "./start.sh 43"
 # node 45
   -
     args: {}
@@ -968,7 +968,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 46"
+    launch-script: "./start.sh 44"
 # node 46
   -
     args: {}
@@ -990,7 +990,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 47"
+    launch-script: "./start.sh 45"
 # node 47
   -
     args: {}
@@ -1011,7 +1011,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 48"
+    launch-script: "./start.sh 46"
 # node 48
   -
     args: {}
@@ -1032,7 +1032,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 49"
+    launch-script: "./start.sh 47"
 # node 49
   -
     args: {}
@@ -1053,7 +1053,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 50"
+    launch-script: "./start.sh 48"
 # node 50
   -
     args: {}
@@ -1074,7 +1074,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 51"
+    launch-script: "./start.sh 49"
 # node 51
   -
     args: {}
@@ -1095,7 +1095,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 52"
+    launch-script: "./start.sh 50"
 # node 52
   -
     args: {}
@@ -1116,7 +1116,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 53"
+    launch-script: "./start.sh 51"
 
 # node 53
   -
@@ -1138,7 +1138,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 54"
+    launch-script: "./start.sh 52"
 # node 54
   -
     args: {}
@@ -1159,7 +1159,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 55"
+    launch-script: "./start.sh 53"
 # node 55
   -
     args: {}
@@ -1180,7 +1180,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 56"
+    launch-script: "./start.sh 54"
 # node 56
   -
     args: {}
@@ -1201,7 +1201,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 57"
+    launch-script: "./start.sh 55"
 # node 57
   -
     args: {}
@@ -1222,7 +1222,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 58"
+    launch-script: "./start.sh 56"
 # node 58
   -
     args: {}
@@ -1243,7 +1243,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 59"
+    launch-script: "./start.sh 57"
 # node 59
   -
     args: {}
@@ -1264,7 +1264,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 60"
+    launch-script: "./start.sh 58"
 # node 60
   -
     args: {}
@@ -1285,7 +1285,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 61"
+    launch-script: "./start.sh 59"
 # node 61
   -
     args: {}
@@ -1306,7 +1306,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 62"
+    launch-script: "./start.sh 60"
 # node 62
   -
     args: {}
@@ -1327,7 +1327,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 63"
+    launch-script: "./start.sh 61"
 # node 63
   -
     args: {}
@@ -1348,7 +1348,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 64"
+    launch-script: "./start.sh 62"
 # node 64
   -
     args: {}
@@ -1369,7 +1369,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 65"
+    launch-script: "./start.sh 63"
 # node 65
   -
     args: {}
@@ -1390,7 +1390,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 66"
+    launch-script: "./start.sh 64"
 # node 66
   -
     args: {}
@@ -1411,7 +1411,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 67"
+    launch-script: "./start.sh 65"
 # node 67
   -
     args: {}
@@ -1432,7 +1432,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 68"
+    launch-script: "./start.sh 66"
 # node 68
   -
     args: {}
@@ -1453,7 +1453,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 69"
+    launch-script: "./start.sh 67"
 # node 69
   -
     args: {}
@@ -1474,7 +1474,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 70"
+    launch-script: "./start.sh 68"
 # node 70
   -
     args: {}
@@ -1495,7 +1495,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 71"
+    launch-script: "./start.sh 69"
 # node 71
   -
     args: {}
@@ -1516,7 +1516,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 72"
+    launch-script: "./start.sh 70"
 # node 72
   -
     args: {}
@@ -1537,7 +1537,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 73"
+    launch-script: "./start.sh 71"
 # node 73
   -
     args: {}
@@ -1558,7 +1558,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 74"
+    launch-script: "./start.sh 72"
 # node 74
   -
     args: {}
@@ -1579,7 +1579,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 75"
+    launch-script: "./start.sh 73"
 # node 75
   -
     args: {}
@@ -1600,7 +1600,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 76"
+    launch-script: "./start.sh 74"
 # node 76
   -
     args: {}
@@ -1621,7 +1621,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 77"
+    launch-script: "./start.sh 75"
 # node 77
   -
     args: {}
@@ -1642,7 +1642,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 78"
+    launch-script: "./start.sh 76"
 # node 78
   -
     args: {}
@@ -1663,7 +1663,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 79"
+    launch-script: "./start.sh 77"
 # node 79
   -
     args: {}
@@ -1684,7 +1684,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 80"
+    launch-script: "./start.sh 78"
 # node 80
   -
     args: {}
@@ -1705,7 +1705,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 81"
+    launch-script: "./start.sh 79"
 # node 81
   -
     args: {}
@@ -1726,7 +1726,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 82"
+    launch-script: "./start.sh 80"
 # node 82
   -
     args: {}
@@ -1747,7 +1747,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 83"
+    launch-script: "./start.sh 81"
 # node 83
   -
     args: {}
@@ -1768,7 +1768,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 84"
+    launch-script: "./start.sh 82"
 # node 84
   -
     args: {}
@@ -1789,7 +1789,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 85"
+    launch-script: "./start.sh 83"
 # node 85
   -
     args: {}
@@ -1810,7 +1810,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 86"
+    launch-script: "./start.sh 84"
 # node 86
   -
     args: {}
@@ -1831,7 +1831,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 87"
+    launch-script: "./start.sh 85"
 # node 87
   -
     args: {}
@@ -1852,7 +1852,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 88"
+    launch-script: "./start.sh 86"
 # node 88
   -
     args: {}
@@ -1873,7 +1873,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 89"
+    launch-script: "./start.sh 87"
 # node 89
   -
     args: {}
@@ -1894,7 +1894,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 90"
+    launch-script: "./start.sh 88"
 # node 90
   -
     args: {}
@@ -1915,7 +1915,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 91"
+    launch-script: "./start.sh 89"
 # node 91
   -
     args: {}
@@ -1936,7 +1936,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 92"
+    launch-script: "./start.sh 90"
 # node 92
   -
     args: {}
@@ -1957,7 +1957,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 93"
+    launch-script: "./start.sh 91"
 # node 93
   -
     args: {}
@@ -1978,7 +1978,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 94"
+    launch-script: "./start.sh 92"
 # node 94
   -
     args: {}
@@ -1999,7 +1999,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 95"
+    launch-script: "./start.sh 93"
 # node 95
   -
     args: {}
@@ -2020,7 +2020,7 @@ nodes:
       -
         source: start.sh
         target: /go-libp2p-pubsub-benchmark-tools/start.sh
-    launch-script: "./start.sh 96"
+    launch-script: "./start.sh 94"
 
 # orchestra node
   -
