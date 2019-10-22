@@ -27,7 +27,7 @@ retry_run() {
 }
 
 deploy() {
-  ../gossip_deployer deploy --file ./gossip.yaml
+  ../gossip_deployer deploy --file ./test.yaml
 }
 
 runtest() {
