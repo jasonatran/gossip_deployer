@@ -1,5 +1,5 @@
 #!/bin/bash -xe
-
+  
 RETRY_DELAY=5
 RETRIES=100
 
@@ -15,11 +15,12 @@ retry_run() {
         set +e
 }
 
+NODE=$1
 # IFS=$'\r\n' GLOBIGNORE='*' command eval  'COUNT=($(cat ./NODECOUNT.txt))' 
 # echo ${COUNT[0]}
-command eval  'IP=($(cat ./IP.txt))' 
+command eval  'IP=($(cat ./IP.txt))'
 # echo ${IP[@]:0:COUNT}
-command eval  'MADDR=($(cat ./MADDR.txt))' 
+command eval  'MADDR=($(cat ./MADDR.txt))'
 # echo ${MADDR[@]:0:COUNT}
 
 deploy_host() {
@@ -29,12 +30,12 @@ deploy_host() {
 }
 
 peer() {
-  echo "peering to: " ${IP[$1]} ${MADDR[$1]}
-  retry_run go run ./cmd/client/main.go open-peers /ip4/${IP[$1]}/tcp/3000/ipfs/${MADDR[$1]}
+  echo "peering to: " ${IP[$NODE]} ${MADDR[$NODE]}
+  retry_run go run ./cmd/client/main.go open-peers /ip4/${IP[$NODE]}/tcp/3000/ipfs/${MADDR[$NODE]}
 }
 
 start() {
-  if [[ "$IP" = "" ]]; then
+  if [[ $NODE = "" ]]; then
     deploy_host
   else
     deploy_host
