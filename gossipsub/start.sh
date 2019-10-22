@@ -15,7 +15,7 @@ retry_run() {
         set +e
 }
 
-IFS=$'\r\n' GLOBIGNORE='*' command eval  'COUNT=($(cat ./NODECOUNT.txt))' 
+# IFS=$'\r\n' GLOBIGNORE='*' command eval  'COUNT=($(cat ./NODECOUNT.txt))' 
 # echo ${COUNT[0]}
 command eval  'IP=($(cat ./IP.txt))' 
 # echo ${IP[@]:0:COUNT}
@@ -29,8 +29,8 @@ deploy_host() {
 }
 
 peer() {
-  echo "peering to: " ${IP[$COUNT]} ${MADDR[$COUNT]}
-  retry_run go run ./cmd/client/main.go open-peers /ip4/${IP[$COUNT]}/tcp/3000/ipfs/${MADDR[$COUNT]}
+  echo "peering to: " ${IP[$1]} ${MADDR[$1]}
+  retry_run go run ./cmd/client/main.go open-peers /ip4/${IP[$1]}/tcp/3000/ipfs/${MADDR[$1]}
 }
 
 start() {
