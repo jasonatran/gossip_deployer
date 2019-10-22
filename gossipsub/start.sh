@@ -18,9 +18,9 @@ retry_run() {
 NODE=$1
 # IFS=$'\r\n' GLOBIGNORE='*' command eval  'COUNT=($(cat ./NODECOUNT.txt))' 
 # echo ${COUNT[0]}
-command eval  'IP=($(cat ./IP.txt))'
+IFS=$'\r\n' GLOBIGNORE='*' command eval  'IP=($(cat ./IP.txt))'
 # echo ${IP[@]:0:COUNT}
-command eval  'MADDR=($(cat ./MADDR.txt))'
+IFS=$'\r\n' GLOBIGNORE='*' command eval  'MADDR=($(cat ./MADDR.txt))'
 # echo ${MADDR[@]:0:COUNT}
 
 deploy_host() {
