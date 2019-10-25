@@ -29,7 +29,7 @@ retry() {
 log() {
   for i in $(seq 0 $COUNT)
   do
-    docker cp whiteblock-node$i-1:/output.log ./$1$i
+    docker cp whiteblock-node$i:/output.log ./$1$i
   done
 }
 
@@ -45,7 +45,7 @@ runtest() {
 
   deploy
 
-  sleep 45
+  $COMMAND sync
 
   retry $COMMAND netconfig all -d $LATENCY -l $PACKET_LOSS -b $BANDWIDTH
 
@@ -56,7 +56,7 @@ runtest() {
 
   while :
   do
-  if [[ $(docker exec whiteblock-node96-1 head /output.log | wc -l) -eq 0 ]]; then
+  if [[ $(docker exec whiteblock-node96 head /output.log | wc -l) -eq 0 ]]; then
     echo ""
   else
     break
