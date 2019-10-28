@@ -9,6 +9,7 @@ import (
         "net/http"
         "github.com/sirupsen/logrus"
         "github.com/whiteblock/cli/whiteblock/cmd/build"
+        "github.com/whiteblock/cli/whiteblock/util"
         "time"
 )
 
@@ -144,16 +145,9 @@ func deployToGenesis(config TestnetConfig, host string, output string, configFil
                 log.Fatal("Error preparing testnet configuration", err)
         }
         log.Printf(string(payload))
-        resp, err := http.Post(fmt.Sprintf("%s/testnets", host), "application/json", bytes.NewBuffer(payload))
+        testnetId, err := util.JwtHTTPRequest("POST",fmt.Sprintf("%s/testnets", host), string(payload))
         if err != nil {
-                log.Fatal("Error sending a testnet configuration", err)
-        }
-        if resp.StatusCode != 200 {
-                log.Fatal("There was an error deploying the testnet", err)
-        }
-        testnetId, err := ioutil.ReadAll(resp.Body)
-        if err != nil {
-                log.Fatal("There was an error reading the response from genesis", err)
+                log.Fatal(err)
         }
         log.Printf("Testnet deployed with id %s", testnetId)
         if output != "" {
