@@ -151,7 +151,7 @@ func deployToGenesis(config TestnetConfig, host string, output string, configFil
         }
         log.Printf("Testnet deployed with id %s", testnetId)
         if output != "" {
-                err := ioutil.WriteFile(output, testnetId, 0777)
+                err := ioutil.WriteFile(output, []byte(testnetId), 0777)
                 if err != nil {
                         log.Fatal("There was an error saving testnet id to file", err)
                 }
