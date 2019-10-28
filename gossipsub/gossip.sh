@@ -56,7 +56,7 @@ runtest() {
 
   while :
   do
-  if [[ $(docker exec whiteblock-node96 head /output.log | wc -l) -eq 0 ]]; then
+  if [[ $(docker exec whiteblock-node$COUNT head /output.log | wc -l) -eq 0 ]]; then
     echo ""
   else
     break
