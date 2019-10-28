@@ -130,7 +130,7 @@ func deployToGenesis(config TestnetConfig, host string, output string, configFil
                 len(config.Nodes),
                 images,
                 []TestnetResource{
-                        {"", "", []string{}, []string{}},
+                        {"1", "", []string{}, []string{}},
                 },
                 TestnetParameters{
                         args,
