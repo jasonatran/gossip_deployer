@@ -7,24 +7,24 @@ nodes = sys.argv[1]
 
 start = "---\nnodes:\n"
 
-end = '\n# orchestra node\n\t-\n\t\targs: {}\n\t\timage: "gcr.io/whiteblock/libp2p_gossipsub"\n\t\tfiles:\n\t\t\t-\n\t\t\t\tsource: IP.txt\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/IP.txt\n\t\t\t-\n\t\t\t\tsource: NODECOUNT.txt\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/NODECOUNT.txt\n\t\t\t-\n\t\t\t\tsource: orchestra.sh\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/orchestra.sh\n\t\tlaunch-script: "ls"'
+end = '\n# orchestra node\n  -\n    args: {}\n    image: "gcr.io/whiteblock/libp2p_gossipsub"\n    files:\n      -\n        source: IP.txt\n        target: /go-libp2p-pubsub-benchmark-tools/IP.txt\n      -\n        source: NODECOUNT.txt\n        target: /go-libp2p-pubsub-benchmark-tools/NODECOUNT.txt\n      -\n        source: orchestra.sh\n        target: /go-libp2p-pubsub-benchmark-tools/orchestra.sh\n    launch-script: "ls"'
 
 def replace(edit):
   if edit == 0:
     st='#node '
     st+=str(edit)
-    st+='\n\t-\n\t\targs: {}\n\t\timage: "gcr.io/whiteblock/libp2p_gossipsub"\n\t\tfiles:\n\t\t\t-\n\t\t\t\tsource: pems/pk-'
+    st+='\n  -\n    args: {}\n    image: "gcr.io/whiteblock/libp2p_gossipsub"\n    files:\n      -\n        source: pems/pk-'
     st+=str(edit+1)
     st+='.pem'
-    st+='\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/pk.pem\n\t\t\t-\n\t\t\t\tsource: NODECOUNT.txt\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/NODECOUNT.txt\n\t\t\t-\n\t\t\t\tsource: IP.txt\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/IP.txt\n\t\t\t-\n\t\t\t\tsource: MADDR.txt\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/MADDR.txt\n\t\t\t-\n\t\t\t\tsource: start.sh\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/start.sh \n\t\tlaunch-script: "./start.sh"\n'
+    st+='\n        target: /go-libp2p-pubsub-benchmark-tools/pk.pem\n      -\n        source: NODECOUNT.txt\n        target: /go-libp2p-pubsub-benchmark-tools/NODECOUNT.txt\n      -\n        source: IP.txt\n        target: /go-libp2p-pubsub-benchmark-tools/IP.txt\n      -\n        source: MADDR.txt\n        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt\n      -\n        source: start.sh\n        target: /go-libp2p-pubsub-benchmark-tools/start.sh \n    launch-script: "./start.sh"\n'
     return st
   else:
     st='#node '
     st+=str(edit)
-    st+='\n\t-\n\t\targs: {}\n\t\timage: "gcr.io/whiteblock/libp2p_gossipsub"\n\t\tfiles:\n\t\t\t-\n\t\t\t\tsource: pems/pk-'
+    st+='\n  -\n    args: {}\n    image: "gcr.io/whiteblock/libp2p_gossipsub"\n    files:\n      -\n        source: pems/pk-'
     st+=str(edit+1)
     st+='.pem'
-    st+='\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/pk.pem\n\t\t\t-\n\t\t\t\tsource: NODECOUNT.txt\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/NODECOUNT.txt\n\t\t\t-\n\t\t\t\tsource: IP.txt\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/IP.txt\n\t\t\t-\n\t\t\t\tsource: MADDR.txt\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/MADDR.txt\n\t\t\t-\n\t\t\t\tsource: start.sh\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/start.sh \n\t\tlaunch-script: "./start.sh '
+    st+='\n        target: /go-libp2p-pubsub-benchmark-tools/pk.pem\n      -\n        source: NODECOUNT.txt\n        target: /go-libp2p-pubsub-benchmark-tools/NODECOUNT.txt\n      -\n        source: IP.txt\n        target: /go-libp2p-pubsub-benchmark-tools/IP.txt\n      -\n        source: MADDR.txt\n        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt\n      -\n        source: start.sh\n        target: /go-libp2p-pubsub-benchmark-tools/start.sh \n    launch-script: "./start.sh '
     st+=str(edit-1)
     st+='"\n'
     return st
