@@ -7,7 +7,7 @@ nodes = sys.argv[1]
 
 start = "---\nnodes:\n"
 
-end = '\n# orchestra node\n  -\n    args: {}\n    image: "gcr.io/whiteblock/libp2p_gossipsub"\n    files:\n      -\n        source: IP.txt\n        target: /go-libp2p-pubsub-benchmark-tools/IP.txt\n      -\n        source: NODECOUNT.txt\n        target: /go-libp2p-pubsub-benchmark-tools/NODECOUNT.txt\n      -\n        source: orchestra.sh\n        target: /go-libp2p-pubsub-benchmark-tools/orchestra.sh\n    launch-script: "ls"'
+end = '\n# orchestra node\n  -\n    args: {}\n    image: "gcr.io/whiteblock/libp2p_gossipsub"\n    files:\n      -\n        source: IP.txt\n        target: /go-libp2p-pubsub-benchmark-tools/IP.txt\n      -\n        source: NODECOUNT.txt\n        target: /go-libp2p-pubsub-benchmark-tools/NODECOUNT.txt\n      -\n        source: orchestra.sh\n        target: /go-libp2p-pubsub-benchmark-tools/orchestra.sh\n-\n    source: ./configs/config.json\n        target: /go-libp2p-pubsub-benchmark-tools/configs/orchestra/config.json\n    launch-script: "ls"'
 
 def genScript(edit):
   if edit == 0:
@@ -34,7 +34,6 @@ def getIPs(n):
   f=open("IP.txt", "r")
   cont = f.readlines()
   for ip in cont[:int(n)]:
-    print(cont[int(n)-1]==ip)
     if ip != cont[int(n)-1]:
       ip=ip.strip('\n')
       ips+='\"'+ip+':8080\",'
