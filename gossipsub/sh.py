@@ -13,20 +13,20 @@ def replace(edit):
   if edit == 0:
     st='#node '
     st+=str(edit)
-    st+='\n\t-\n\t\targs:{}\n\t\timage: "gcr.io/whiteblock/libp2p_gossipsub"\n\t\tfiles:\n\t\t\t-\n\t\t\t\tsource: pems/pk-'
+    st+='\n\t-\n\t\targs: {}\n\t\timage: "gcr.io/whiteblock/libp2p_gossipsub"\n\t\tfiles:\n\t\t\t-\n\t\t\t\tsource: pems/pk-'
     st+=str(edit+1)
     st+='.pem'
-    st+='\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/pk.pem\n\t\t\t-\n\t\t\t\tsource: NODECOUNT.txt\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/NODECOUNT.txt\n\t\t\t-\n\t\t\t\tsource: IP.txt\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/IP.txt\n\t\t\t-\n\t\t\t\tsource: MADDR.txt\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/MADDR.txt\n\t\t\t-\n\t\t\t\tsource: start.sh\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/start.sh \n\t\tlaunch-script: "./start.sh\n'
+    st+='\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/pk.pem\n\t\t\t-\n\t\t\t\tsource: NODECOUNT.txt\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/NODECOUNT.txt\n\t\t\t-\n\t\t\t\tsource: IP.txt\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/IP.txt\n\t\t\t-\n\t\t\t\tsource: MADDR.txt\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/MADDR.txt\n\t\t\t-\n\t\t\t\tsource: start.sh\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/start.sh \n\t\tlaunch-script: "./start.sh"\n'
     return st
   else:
     st='#node '
     st+=str(edit)
-    st+='\n\t-\n\t\targs:{}\n\t\timage: "gcr.io/whiteblock/libp2p_gossipsub"\n\t\tfiles:\n\t\t\t-\n\t\t\t\tsource: pems/pk-'
+    st+='\n\t-\n\t\targs: {}\n\t\timage: "gcr.io/whiteblock/libp2p_gossipsub"\n\t\tfiles:\n\t\t\t-\n\t\t\t\tsource: pems/pk-'
     st+=str(edit+1)
     st+='.pem'
     st+='\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/pk.pem\n\t\t\t-\n\t\t\t\tsource: NODECOUNT.txt\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/NODECOUNT.txt\n\t\t\t-\n\t\t\t\tsource: IP.txt\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/IP.txt\n\t\t\t-\n\t\t\t\tsource: MADDR.txt\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/MADDR.txt\n\t\t\t-\n\t\t\t\tsource: start.sh\n\t\t\t\ttarget: /go-libp2p-pubsub-benchmark-tools/start.sh \n\t\tlaunch-script: "./start.sh '
     st+=str(edit-1)
-    st+='\n'
+    st+='"\n'
     return st
 
 #print(os.getcwd()+"/gossip.yaml")
