@@ -8,9 +8,9 @@ go build
 ## GENERATE YAML
 Generates yaml file to be used by gossip_deployer
 #### USAGE
-`python sh.py <number-of-nodes`
+`python sh.py <number-of-nodes>`
 
-The output file will be named `gossip.yaml`
+The output file will be named `gossip.yaml` and `NODECOUNT.txt`
 
 ## GOSSIP DEPLOYER
 The gossip deployer will be used to deploy a testnet by sending an API request to the locally running Genesis
