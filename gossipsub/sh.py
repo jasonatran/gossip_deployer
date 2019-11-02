@@ -59,9 +59,12 @@ file3 = cwd+"/configs/config.json"
 if os.path.exists(file1):
   ans = raw_input("File already exists, would you like to overwrite the existing file? (y/n) \n")
   if ans.lower() == "y" or ans.lower == "yes":
-    os.remove(file1)
-    os.remove(file2)
-    os.remove(file3)
+    try: 
+      os.remove(file1)
+      os.remove(file2)
+      os.remove(file3)
+    except:
+      pass
   else:
     print("Exiting, did not overwrite the file.")
     exit(0)
@@ -77,6 +80,10 @@ f2 = open(file2, "a")
 f2.write(str(int(nodes)-1))
 f2.close()
 
+try:
+  os.mkdir(cwd+"/configs")
+except:
+  pass
 f3 = open(file3, "a")
 f3.write(str(genConf(getIPs(nodes))))
 f3.close()
