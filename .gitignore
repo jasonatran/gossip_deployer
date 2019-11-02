@@ -1,2 +1,5 @@
 .DS_STORE
 gossip_deployer
+gossipsub/NODECOUNT.txt
+gossipsub/gossip.yaml
+gossipsub/configs
