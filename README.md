@@ -34,3 +34,10 @@ There is a script that will be included in the directory called `gossip.sh` whic
 `python sh.py <number-of-nodes>`
 2. run gossip script
 `./gossip.sh <test-series> ...`
+
+## PRIVKEYS
+The private keys have been generated using the tool from https://github.com/agencyenterprise/pem-utils
+1000 private keys have been pregenerated to be used for every test series. The key files can be found in https://github.com/whiteblock/gossip_deployer/tree/master/gossipsub/pems
+
+The google sheet describes the IP addresses and private key. 
+https://docs.google.com/spreadsheets/u/1/d/1yRZnQv016C9Alon0KFNse6zIMc5k9YD3GGMmU2am1hc/edit#gid=1524596621
