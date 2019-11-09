@@ -38,6 +38,10 @@ deploy() {
   ../gossip_deployer deploy --file ./gossip.yaml
 }
 
+genPeers() {
+  python topo.py $1 $2 $3
+}
+
 runtest() {
   ulimit -n 10000
   local dir=series_$1_$(date +"%FT%T"| tr -d '[:space:]')
@@ -91,6 +95,7 @@ for i in $@; do
   case "$i" in
     1)
       # Control Case
+      genPeers 42 20 3
       run_case 1a
       run_case 1b
       run_case 1c

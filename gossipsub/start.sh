@@ -15,13 +15,14 @@ retry_run() {
         set +e
 }
 
-NODE=$1
 # IFS=$'\r\n' GLOBIGNORE='*' command eval  'COUNT=($(cat ./NODECOUNT.txt))' 
 # echo ${COUNT[0]}
 IFS=$'\r\n' GLOBIGNORE='*' command eval  'IP=($(cat ./IP.txt))'
 # echo ${IP[@]:0:COUNT}
 IFS=$'\r\n' GLOBIGNORE='*' command eval  'MADDR=($(cat ./MADDR.txt))'
 # echo ${MADDR[@]:0:COUNT}
+IFS=$'\r\n' GLOBIGNORE='*' command eval  'PEERS=($(cat ./topology/peers.txt))'
+# echo ${PEERS[@]:0:COUNT}
 
 deploy_host() {
   echo "deploying host"
@@ -29,9 +30,18 @@ deploy_host() {
   tmux send-keys -thost "/usr/local/go/bin/go run ./cmd/host/main.go --pem ./pk.pem --log /output.log" C-m
 }
 
+# peer() {
+#   echo "peering to: " ${IP[$NODE]} ${MADDR[$NODE]}
+#   retry_run go run ./cmd/client/main.go open-peers /ip4/${IP[$NODE]}/tcp/3000/ipfs/${MADDR[$NODE]}
+# }
+
 peer() {
-  echo "peering to: " ${IP[$NODE]} ${MADDR[$NODE]}
-  retry_run go run ./cmd/client/main.go open-peers /ip4/${IP[$NODE]}/tcp/3000/ipfs/${MADDR[$NODE]}
+for peer in ${PEERS[@]}
+do
+  # echo ${IP[peer]}
+  # echo ${MADDR[peer]}
+  retry_run go run ./cmd/client/main.go open-peers /ip4/${IP[peer]}/tcp/3000/ipfs/${MADDR[peer]}
+done
 }
 
 start() {
