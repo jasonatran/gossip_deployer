@@ -30,7 +30,7 @@ def genYAML(edit):
   st+='\n        source: MADDR.txt'
   st+='\n        target: /go-libp2p-pubsub-benchmark-tools/MADDR.txt'
   st+='\n      -'
-  st+='\n        source: peers_'
+  st+='\n        source: ./topology/peers_'
   st+=str(edit)
   st+='.txt'
   st+='\n        target: /go-libp2p-pubsub-benchmark-tools/peers.txt'

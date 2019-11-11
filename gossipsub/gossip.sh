@@ -95,7 +95,7 @@ for i in $@; do
   case "$i" in
     1)
       # Control Case
-      genPeers 42 20 3
+      genPeers 42 $COUNT 3
       run_case 1a
       run_case 1b
       run_case 1c
