@@ -45,12 +45,8 @@ done
 }
 
 start() {
-  if [[ $NODE = "" ]]; then
-    deploy_host
-  else
-    deploy_host
-    peer
-  fi
+  deploy_host
+  peer
 }
 
 start
