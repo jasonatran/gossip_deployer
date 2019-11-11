@@ -33,12 +33,12 @@ log() {
   done
 }
 
-self() {
-  for i in $(seq 0 $COUNT)
-  do
-    docker exec whiteblock-node$i bash -c "echo '$i' >> self.txt"
-  done
-}
+# self() {
+#   for i in $(seq 0 $COUNT)
+#   do
+#     docker exec whiteblock-node$i bash -c "echo '$i' >> self.txt"
+#   done
+# }
 
 deploy() {
   # ../gossip_deployer deploy --file ./test.yaml
@@ -55,7 +55,6 @@ runtest() {
   sudo mkdir $dir
 
   deploy
-  self
 
   $COMMAND sync
 
@@ -64,7 +63,7 @@ runtest() {
   retry docker exec -d whiteblock-node$COUNT ./orchestra.sh
 
   OUTPUT_FILE=$dir/resource.log
-  tmux kill-server; tmux new -s resource_recorder -d; tmux send-keys -t resource_recorder "docker stats >> $OUTPUT_FILE" C-m
+  tmux kill-session -t resource_recorder; tmux new -s resource_recorder -d; tmux send-keys -t resource_recorder "docker stats >> $OUTPUT_FILE" C-m
 
   while :
   do

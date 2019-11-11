@@ -8,9 +8,9 @@ retry_run() {
         set -e
         until [ $n -ge $RETRIES ]
         do
-                $@ && break
-                n=$[$n+1]
-                sleep $RETRY_DELAY
+          $@ && break
+          n=$[$n+1]
+          sleep $RETRY_DELAY
         done
         set +e
 }
@@ -20,8 +20,6 @@ IFS=$'\r\n' GLOBIGNORE='*' command eval  'IP=($(cat ./IP.txt))'
 IFS=$'\r\n' GLOBIGNORE='*' command eval  'MADDR=($(cat ./MADDR.txt))'
 # echo ${MADDR[@]:0:COUNT}
 IFS=$'\r\n' GLOBIGNORE='*' command eval  'PEERS=($(cat ./peers.txt))'
-# echo ${PEERS[@]:0:COUNT}
-IFS=$'\r\n' GLOBIGNORE='*' command eval  'SELF=($(cat ./self.txt))'
 # echo ${PEERS[@]:0:COUNT}
 
 deploy_host() {
@@ -39,13 +37,7 @@ deploy_host() {
 peer() {
   for peer in ${PEERS[@]}
   do
-    index=$((peer-1))
-    # echo [ "$index" -eq "$SELF" ]
-    if [ "$index" -ne "$SELF" ]; then
-      retry_run go run ./cmd/client/main.go open-peers /ip4/${IP[index]}/tcp/3000/ipfs/${MADDR[index]}
-    else
-      continue
-    fi
+    retry_run go run ./cmd/client/main.go open-peers /ip4/${IP[peer]}/tcp/3000/ipfs/${MADDR[peer]}
   done
 }
 
