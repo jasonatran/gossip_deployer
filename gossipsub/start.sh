@@ -30,18 +30,19 @@ deploy_host() {
   tmux send-keys -thost "/usr/local/go/bin/go run ./cmd/host/main.go --pem ./pk.pem --log /output.log" C-m
 }
 
+# LINEAR PEERING TOPOLOGY
 # peer() {
 #   echo "peering to: " ${IP[$NODE]} ${MADDR[$NODE]}
 #   retry_run go run ./cmd/client/main.go open-peers /ip4/${IP[$NODE]}/tcp/3000/ipfs/${MADDR[$NODE]}
 # }
 
 peer() {
-for peer in ${PEERS[@]}
-do
-  # echo ${IP[peer]}
-  # echo ${MADDR[peer]}
-  retry_run go run ./cmd/client/main.go open-peers /ip4/${IP[peer]}/tcp/3000/ipfs/${MADDR[peer]}
-done
+  for peer in ${PEERS[@]}
+  do
+    # echo ${IP[peer]}
+    # echo ${MADDR[peer]}
+    retry_run go run ./cmd/client/main.go open-peers /ip4/${IP[peer]}/tcp/3000/ipfs/${MADDR[peer]}
+  done
 }
 
 start() {
