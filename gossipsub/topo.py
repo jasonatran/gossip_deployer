@@ -1,9 +1,9 @@
 import os
 import sys
 import networkx as nx
-import matplotlib
-matplotlib.use('TkAgg')
-import matplotlib.pyplot as plt
+#import matplotlib
+#matplotlib.use('TkAgg')
+#import matplotlib.pyplot as plt
 # from networkx.generators import
 
 def usage():
