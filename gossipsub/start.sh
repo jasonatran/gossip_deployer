@@ -39,9 +39,10 @@ deploy_host() {
 peer() {
   for peer in ${PEERS[@]}
   do
-    # echo ${IP[peer]}
-    # echo ${MADDR[peer]}
-    retry_run go run ./cmd/client/main.go open-peers /ip4/${IP[peer]}/tcp/3000/ipfs/${MADDR[peer]}
+    index=$((peer-1))
+    # echo ${IP[index]}
+    # echo ${MADDR[index]}
+    retry_run go run ./cmd/client/main.go open-peers /ip4/${IP[index]}/tcp/3000/ipfs/${MADDR[index]}
   done
 }
 
