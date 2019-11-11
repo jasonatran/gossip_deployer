@@ -21,7 +21,7 @@ IFS=$'\r\n' GLOBIGNORE='*' command eval  'IP=($(cat ./IP.txt))'
 # echo ${IP[@]:0:COUNT}
 IFS=$'\r\n' GLOBIGNORE='*' command eval  'MADDR=($(cat ./MADDR.txt))'
 # echo ${MADDR[@]:0:COUNT}
-IFS=$'\r\n' GLOBIGNORE='*' command eval  'PEERS=($(cat ./topology/peers.txt))'
+IFS=$'\r\n' GLOBIGNORE='*' command eval  'PEERS=($(cat ./peers.txt))'
 # echo ${PEERS[@]:0:COUNT}
 
 deploy_host() {
