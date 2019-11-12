@@ -38,10 +38,13 @@ sp=dict(nx.all_pairs_shortest_path(ba))
 cwd=os.getcwd()
 dir=cwd+"/topology/"
 
-print("deleting directory")
-filelist = [ f for f in os.listdir(dir) if f.endswith(".txt") ]
-for f in filelist:
-    os.remove(os.path.join(dir, f))
+if os.path.isdir(dir):
+  print("deleting directory")
+  filelist = [ f for f in os.listdir(dir) if f.endswith(".txt") ]
+  for f in filelist:
+      os.remove(os.path.join(dir, f))
+else:
+  os.mkdir("topology")
 
 for i in range(0, nodes):
    l=[n for n in ba.neighbors(i)]
